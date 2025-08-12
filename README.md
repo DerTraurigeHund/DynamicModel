@@ -4,7 +4,7 @@ Ein leichtgewichtiges, produktionsnahes Mini‑ORM mit:
 - CRUD, Upsert, Bulk‑Operationen
 - Transaktionen + Savepoints (verschachtelbar)
 - Soft‑Delete (automatische Filterung)
-- Hooks (global/Tabellen-spezifisch)
+- Hooks (global/Tabellen-spezifisch)08
 - Migrations-Framework mit Historie
 - DDL‑Helper (Index, FK, Constraints, Timestamps)
 - Audit‑Trail via Trigger
@@ -2348,5 +2348,3 @@ for r in DM.stream_query("SELECT * FROM big_table"):
 
 DM.close()
 ```
-
-Viel Erfolg mit DynamicModel! Wenn du spezielle Erweiterungen brauchst (Operatoren in WHERE, zusammengesetzte OrderBys, eigene Typ-Mappings, etc.), kann das gezielt ergänzt werden.
